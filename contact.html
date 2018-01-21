@@ -121,7 +121,7 @@
 				<div class="col">
 					<h3>Summer Admission 2018</h3>
 					<p>Are you ready for grab your seat ? don’t miss the chance.</p>
-					<a href="" class="edutune-btn">Book Your Seat</a>
+					<a href="" class="edutune-btn bg-default">Book Your Seat</a>
 				</div>
 			</div>
 		</div>
@@ -147,12 +147,12 @@
 					<div class="footer-widget">
 						<h3>Quick Link</h3>
 						<ul>
-							<li><a href="">Home</a></li>
-							<li><a href="">About Us</a></li>
-							<li><a href="">Our Coures</a></li>
+							<li><a href="index.html">Home</a></li>
+							<li><a href="about.html">About Us</a></li>
+							<li><a href="courses.html">Our Coures</a></li>
 							<li><a href="contact.html">Contact Us</a></li>
 							<li><a href="">Privancy Policy</a></li>
-							<li><a href="">Support</a></li>
+							<li><a href="faq.html">FAQ</a></li>
 						</ul>
 					</div>
 				</div>
@@ -187,13 +187,121 @@
 
 
 <script type="text/javascript" src="js/jquery.min.js"></script>
-<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBajGjSQd9O4zoKVeCKyhhJt43UVpTLGL4"></script>
+<!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBajGjSQd9O4zoKVeCKyhhJt43UVpTLGL4"></script>
+ -->
 <script type="text/javascript" src="js/popper.min.js"></script>
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.magnific-popup.js"></script>
 <script type="text/javascript" src="js/owl.carousel.min.js"></script>
-<script type="text/javascript" src="js/gmap3.min.js"></script>
+<script type="text/javascript" src="js/gmap-fontawesome.js"></script>
 <script type="text/javascript" src="js/main.js"></script>
+    <script>
+      function initMap() {
+        // Styles a map in night mode.
+        var center =  {lat: 40.674, lng: -73.945};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          center:center,
+          zoom: 12,
+          styles: [
+            {elementType: 'geometry', stylers: [{color: '#ffffff'}]},
+            {elementType: 'labels.text.stroke', stylers: [{color: '#eeeee'}]},
+            {elementType: 'labels.text.fill', stylers: [{color: '#9c8a6a'}]},
+            {
+              featureType: 'administrative.locality',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#a4a8a7'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#a4a8a7'}]
+            },
+            {
+              featureType: 'transit',
+              elementType: 'geometry',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'transit.station',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#eeeeee'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{color: '#c8d7d4'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.fill',
+              stylers: [{color: '#85724a'}]
+            },
+            {
+              featureType: 'water',
+              elementType: 'labels.text.stroke',
+              stylers: [{color: '#ddd'}]
+            }
+          ]
+        });
+		new google.maps.Marker({
+		    map: map,
+		    icon: {
+		        path: fontawesome.markers.MAP_MARKER,
+		        scale: 1,
+		        strokeWeight: 0.2,
+		        strokeColor: 'black',
+		        strokeOpacity: 1,
+		        fillColor: '#10b666',
+		        fillOpacity: 0.7,
+		    },
+		    clickable: false,
+		    position: new google.maps.LatLng(center)
+		});
+
+      }
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBajGjSQd9O4zoKVeCKyhhJt43UVpTLGL4&callback=initMap"></script>
 
 </body>
 </html>

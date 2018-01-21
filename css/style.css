@@ -7,7 +7,7 @@ html,body{
 	line-height: 1.9;
     background-color: #f9fffd;
 }
-a:hover{text-decoration: none;color: inherit;}
+a:hover{text-decoration: none;color: #fff;}
 h1,h2,h3,h4,h5,h6{
     font-family: 'Playfair Display', serif;
     color: #313131;
@@ -19,8 +19,8 @@ h1,h2,h3,h4,h5,h6{
 .mt-50{margin-top: 50px !important;}
 .mt-0{margin-top: 0px !important;}
 .mt--30{margin-top: -30px !important;}
+.bg-default{background-color: #00cf7f !important;}
 
-/* a{color: #00cf7f} */
 input:focus, textarea:focus, button:focus, a:focus, select:focus{outline: none;}
 img{max-width: 100%; height: auto;}
 input[type='text'],input[type='email'],textarea,input[type='number'] {
@@ -38,16 +38,13 @@ input[type='text'],input[type='email'],textarea,input[type='number'] {
     width:  100%;
     z-index:  999;
 }
-
 .logo a {
     color:  #fff;
     font-size:  26px;
 }
-
 .logo span {
     color: #00cf7f;
 }
-
 .main-menu .active {
     color:  #00cf7f;
 }
@@ -65,11 +62,8 @@ input[type='text'],input[type='email'],textarea,input[type='number'] {
 .main-menu li a {
     display:  block;
     color:  #fff;
-    /* padding-left:  25px; */
     padding: 13px 0 13px 25px;
 }
-
-.main-menu {}
 
 .header-area {
     padding: 15px 0;
@@ -82,8 +76,6 @@ input[type='text'],input[type='email'],textarea,input[type='number'] {
     background-size:  cover;
     background-position:  center;
     background-color:  #333;
-    /* padding: 200px 0px 150px; */
-
     z-index:  1;
     padding: 150px 0;
 }
@@ -157,7 +149,9 @@ button[type='submit'] {background:  #00cf7f;border:  none;color:  #fff;padding: 
     margin:  0;
 }
 
-.single-content-item p {
+.content-meta p {
+    margin-bottom:  5px;
+    line-height: 1.8;
 }
 
 .edutune-list h3 {
@@ -332,7 +326,7 @@ button[type='submit'] {background:  #00cf7f;border:  none;color:  #fff;padding: 
     font-size:  14px;
     text-align:  center;
     border-radius:  5px;
-    /* line-height:  1.8; */
+    line-height:  1.7;
     top: 25px;
 }
 
